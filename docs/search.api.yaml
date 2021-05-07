@@ -21,7 +21,7 @@ tags:
 paths:
   /searches:
     post:
-      summary: Call this endpoint to create a search request.
+      summary: Create a search request
       description: A `requestId` will be returned given a valid search request. This `requestId` is required for polling for search results later on.
       operationId: createSearch
       tags:
@@ -47,7 +47,7 @@ paths:
 
   /polls:
     post:
-      summary: Call this endpoint to poll for search results.
+      summary: Poll for search results
       description: A `requestId` is needed for polling for search results corresponding to its search request.
       operationId: createPoll
       tags:
